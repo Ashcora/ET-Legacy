@@ -57,12 +57,12 @@ To use the scripts from this repository, follow these simple steps:
 
 1. **Clone the Repository:**
 
-git clone https://github.com/your-username/awesome-os-automation-scripts.git
+git clone https://github.com/Ashcora/Standard.git
 
 
 2. **Navigate to the Script of Your Choice:**
 
-cd awesome-os-automation-scripts
+cd Standard
 cd <script-name>
 
 
