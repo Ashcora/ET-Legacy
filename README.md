@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Welcome to my repository! This collection of Python and Shell scripts is designed to enhance your daily work on both Linux and Windows operating systems. Whether you're a developer, system administrator, or just an enthusiast, these scripts aim to automate repetitive tasks, streamline workflows, and make your life easier.
+Welcome to my repository! Whether you're a developer, system administrator, or just an enthusiast, these scripts aim to automate repetitive tasks, streamline workflows, and make your life easier.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Welcome to my repository! This collection of Python and Shell scripts is designe
 
 ## Introduction
 
-Modern operating systems come with a wide range of powerful tools, but there are always those little tasks that could be automated to save time and increase productivity. The Awesome OS Automation Scripts repository provides a curated collection of Python and Shell scripts that are cross-platform compatible and can be used on Linux and Windows systems alike.
+Modern operating systems come with a wide range of powerful tools, but there are always those little tasks that could be automated to save time and increase productivity.
 
 ## Features
 
@@ -35,7 +35,7 @@ To use the scripts from this repository, follow these simple steps:
 
 1. **Clone the Repository:**
 
-git clone https://github.com/Ashcora/Standard.git
+git clone https://github.com/Ashcora/ET-Legacy.git
 
 
 2. **Navigate to the Script of Your Choice:**
