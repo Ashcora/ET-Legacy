@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Welcome to the Awesome OS Automation Scripts repository! This collection of Python and Shell scripts is designed to enhance your daily work on both Linux and Windows operating systems. Whether you're a developer, system administrator, or just an enthusiast, these scripts aim to automate repetitive tasks, streamline workflows, and make your life easier.
+Welcome to my repository! This collection of Python and Shell scripts is designed to enhance your daily work on both Linux and Windows operating systems. Whether you're a developer, system administrator, or just an enthusiast, these scripts aim to automate repetitive tasks, streamline workflows, and make your life easier.
 
 ## Table of Contents
 
