@@ -27,28 +27,6 @@ Modern operating systems come with a wide range of powerful tools, but there are
 ## Scripts
 
 The repository contains a variety of automation scripts for Linux and Windows, including but not limited to:
-
-1. **System Information**
-   - `system_info.py`: Gather essential system information and display it in a user-friendly format.
-
-2. **File Organizer**
-   - `file_organizer.py`: Organize files in a specified directory by grouping them based on their extensions.
-
-3. **Backup Tool**
-   - `backup.py`: Create backups of specified files and directories and save them to a target location.
-
-4. **Network Checker**
-   - `network_checker.sh`: Check the status of the internet connection and provide a notification.
-
-5. **Software Installer**
-   - `software_installer.sh`: Automate the installation process of essential software packages.
-
-6. **Data Scraper**
-   - `data_scraper.py`: Extract data from websites using web scraping techniques.
-
-7. **Task Scheduler**
-   - `task_scheduler.py`: Schedule tasks to run at specific intervals or times.
-
 Please refer to the individual script files for more details and usage instructions.
 
 ## Getting Started
