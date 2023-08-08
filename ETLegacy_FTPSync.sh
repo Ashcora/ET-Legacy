@@ -17,12 +17,10 @@ sftp_port=22
 send_email() {
     local subject="$1"
     local body="$2"
-    echo "Subject: $subject" >/tmp/email.txt
-    echo -e "$body" >>/tmp/email.txt
-    ssmtp YOURMAIL@HERE.ME </tmp/email.txt
+    echo "$body" | mail -s "$subject" YOURMAIL@HERE.ME
 }
 
-# Function to delete (old) legacy*.pk3 files on the remote FTP server
+# Function to delete legacy*.pk3 files on the remote FTP server
 delete_legacy_files() {
     echo "Deleting legacy*.pk3 files on the remote FTP server..."
     sshpass -p "$sftp_password" sftp -P "$sftp_port" "$sftp_user@$sftp_host" <<EOF
@@ -49,6 +47,5 @@ else
     exit 1
 fi
 
-# Clean up and exit
-rm /tmp/email.txt
 exit 0
+
