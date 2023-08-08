@@ -4,6 +4,13 @@
 max_lines=10000000
 max_size=5M
 
+# Function to send an email using ssmtp
+send_email() {
+    local subject="$1"
+    local body="$2"
+    echo "$body" | mail -s "$subject" YOURMAIL@HERE.ME
+}
+
 # Function to truncate log files based on maximum size
 truncate_log_file() {
     local file="$1"
@@ -20,7 +27,7 @@ extract_last_lines() {
 }
 
 # Loop through all log files in the directory
-for file in /USERNAME/.etlegacy/*.log; do
+for file in /root/.etlegacy/*.log; do
     # Check if the file is larger than the max size
     if [ $(stat -c %s "$file") -gt $(numfmt --from=iec "$max_size") ]; then
         # If it is, truncate it to the max size
@@ -33,4 +40,14 @@ for file in /USERNAME/.etlegacy/*.log; do
         extract_last_lines "$file" "$max_lines"
     fi
 done
+
+# Send email notification
+if [ $? -eq 0 ]; then
+    send_email "ETLegacy Log clearing completed successfully" "The log clearing process was successful. Check the logs for details."
+else
+    send_email "Script failed" "The log clearing process encountered an error. Please check the logs for details."
+    exit 1
+fi
+
+# Exit
 exit 0
